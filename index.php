@@ -6,26 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+
+    <title>Fake News </title>
 </head>
 
 <body>
-    <div class="header">
-        <h2>Blog Name</h2>
-    </div>
+    <header class="header">
 
-    <div class="wrapper">
+        <h2>Fake News</h2>
 
-        <div class="column">
-            <div class="card">
-                <h2>TITLE HEADING</h2>
+    </header>
 
-                <div class="fakeimg" style="height:200px;">Image</div>
+    <section>
+        <div class="wrapper">
 
-                <p>Some text..</p>
-                <h5>Author, Title description, Dec 7, 2017</h5>
-            </div>
 
+            <?php require __DIR__ . '/functions.php';
+            echo getArticle($articles); ?>
 
             <div class="card">
                 <h2>TITLE HEADING</h2>
@@ -36,6 +33,7 @@
             </div>
         </div>
 
+    </section>
 
 
     </div>

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_type=1);
+
 // I need a foreach loop in index that writes out £article['content']
 
 // Article array med publish date, like counter, author, content and title
@@ -23,7 +25,8 @@ $articles =  [
         Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.',
         'author' => $authors[4]['name'],
         'published_date' => '2020-02-10',  // Kanske lägga datum i en ny array?
-        'likes' => '15'
+        'likes' => '15',
+        'image' => '/img/image1.jpg'
     ],
 
     [
@@ -35,7 +38,8 @@ $articles =  [
         Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.",
         'author' => $authors[3]['name'],
         'published_date' => '2020-02-09',  // Kanske lägga datum i en ny array?
-        'likes' => '10'
+        'likes' => '10',
+        'image' => '/img/image2.jpg'
     ],
 
     [
@@ -47,7 +51,8 @@ $articles =  [
         quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire. ",
         'author' => $authors[2]['name'],
         'published_date' => '2020-02-08',  // Kanske lägga datum i en ny array?
-        'likes' => '30'
+        'likes' => '30',
+        'image' => '/img/image3.jpg'
     ],
 
     [
@@ -65,7 +70,8 @@ $articles =  [
          Forbidden forest grindylows wool socks.",
         'author' => $authors[1]['name'],
         'published_date' => '2020-02-07',  // Kanske lägga datum i en ny array?
-        'likes' => '24'
+        'likes' => '24',
+        'image' => '/img/image4.jpg'
     ],
 
     [
@@ -76,7 +82,8 @@ $articles =  [
           Room of Requirement counter-clockwise Shrieking Shack. Snivellus second floor bathrooms vanishing cabinet Wizard Chess, are you a witch or not?",
         'author' => $authors[0]['name'],
         'published_date' => '2020-02-06',  // Kanske lägga datum i en ny array?
-        'likes' => '14'
+        'likes' => '14',
+        'image' => '/img/image5.jpg'
     ],
 
     [
@@ -86,7 +93,8 @@ $articles =  [
         he will rise again and he will come for us, headmaster Erumpent horn. Fenrir Grayback horseless carriages ‘zis is a chance many would die for!",
         'author' => $authors[0]['name'],
         'published_date' => '2020-02-05',  // Kanske lägga datum i en ny array?
-        'likes' => '16'
+        'likes' => '16',
+        'image' => '/img/image6.jpg'
     ],
 
     [
@@ -96,7 +104,8 @@ $articles =  [
          Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue turban remember my last.",
         'author' => $authors[4]['name'],
         'published_date' => '2020-02-04',  // Kanske lägga datum i en ny array?
-        'likes' => '29'
+        'likes' => '29',
+        'image' => '/img/image7.jpg'
     ],
 
     [
@@ -107,7 +116,8 @@ $articles =  [
         Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.        ",
         'author' => $authors[1]['name'],
         'published_date' => '2020-02-03',  // Kanske lägga datum i en ny array?
-        'likes' => '34'
+        'likes' => '34',
+        'image' => '/img/image8.jpg'
     ],
 
     [
@@ -117,7 +127,8 @@ $articles =  [
         feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.",
         'author' => $authors[2]['name'],
         'published_date' => '2020-02-02',  // Kanske lägga datum i en ny array?
-        'likes' => '21'
+        'likes' => '21',
+        'image' => '/img/image9.jpg'
     ],
 
     [
@@ -130,7 +141,8 @@ $articles =  [
         Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.",
         'author' => $authors[3]['name'],
         'published_date' => '2020-02-01',  // Kanske lägga datum i en ny array?
-        'likes' => '17'
+        'likes' => '17',
+        'image' => '/img/image10.jpg'
     ],
 
 
