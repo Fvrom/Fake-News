@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_type=1);
+declare(strict_types=1);
 
 // I need a foreach loop in index that writes out £article['content']
 
@@ -146,4 +146,35 @@ $articles =  [
     ],
 
 
+];
+
+
+$ads = [
+    ['ad' => '1', 'name' => 'PotionMax'],
+    ['ad' => '2', 'name' => 'Wizard for Dummies'],
+    ['ad' => '3', 'name' => 'Get better at Potions'],
+];
+
+$commercial =  [
+    [
+        'title' => 'Potion to the max!',
+        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
+        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
+        Snitch Fluffy rock-cake',
+        'ad' => $ads[0]['name'],
+    ],
+    [
+        'title' => 'Wizard for Dummmies',
+        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
+        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
+        Snitch Fluffy rock-cake',
+        'ad' => $ads[1]['name'],
+    ],
+    [
+        'title' => 'Get better at Potions today!',
+        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
+        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
+        Snitch Fluffy rock-cake',
+        'ad' => $ads[2]['name'],
+    ]
 ];

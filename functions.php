@@ -14,20 +14,26 @@ function getArticle($articles)
             <p>
                 <?= $article['content']; ?>
             </p>
-
-            <p>
-                <?= $article['author']; ?>
-            </p>
-
-            <p>
-                <?= $article['published_date']; ?>
-            </p>
-
-            <p>
-                <?= $article['likes']; ?>
-            </p>
-
             <div class="article_image"> <img src=" <?= $article['image'] ?>  " alt="image for article"> </div>
+
+            <div class="info_wrapper">
+                <p class="info_item">
+                    Written by:
+                    <?= $article['author']; ?>
+                </p>
+
+                <p class="info_item">
+                    Published:
+                    <?= $article['published_date']; ?>
+                </p>
+
+                <button class="info_item">
+                    Likes:
+                    <?= $article['likes']; ?>
+                    </p>
+            </div>
+
+
         </article>
 
 
@@ -35,9 +41,18 @@ function getArticle($articles)
     endforeach;
 }
 
-$allArticles = getArticle($articles);
 
 
+function getRandomAd($commercial)
+{
+
+    require __DIR__ . '/data.php';
+
+    shuffle($commercial);
+
+
+    return $commerical[0];
+}
 
 
 ?>

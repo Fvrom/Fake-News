@@ -1,3 +1,7 @@
+<?php require __DIR__ . '/functions.php';
+require __DIR__ . '/data.php'; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+
 
 
     <title>Fake News </title>
@@ -12,24 +21,30 @@
 
 <body>
     <header class="header">
-
         <h2>Fake News</h2>
-
     </header>
 
     <section>
         <div class="wrapper">
+            <div clasS="sidebar">
+                <div class="ads">
+                    <?php getRandomAd($commercial) ?>
 
 
-            <?php require __DIR__ . '/functions.php';
-            echo getArticle($articles); ?>
+                </div>
+            </div>
 
-            <div class="card">
-                <h2>TITLE HEADING</h2>
+            <div class="main-content">
 
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <h5>Author, Title description, Sep 2, 2017</h5>
+
+
+                <?php echo getArticle($articles); ?>
+
+
+            </div>
+
+            <div class="archive-sidebar">
+
             </div>
         </div>
 

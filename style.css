@@ -1,49 +1,60 @@
-* {
-  box-sizing: border-box;
-}
 
-body {
-    font-family: Arial;
-    padding: 20px;
-    background: #bbbaba;
-    display: flex;
-    flex-direction: column;
-  }
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+    padding: 20px;
     font-size: 40px;
     text-align: center;
     background: white;
   }
-  
 
   .wrapper {
-    display: flex;
+    display: flex; 
+  }
 
-flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+  .sidebar {
+    
+    background: white;
+    flex: wrap;
+    margin: 10px 0; 
+    padding: 10px;
+    width: 20%;
+    height: 500px;
+    position: relative;
+  }
+  .ads {
+    padding: 10px;
+  }
+}
+  
+  .archive.sidebar {
+    background: tomato;
+    width: 20%; 
+    flex: 1;
+  }
 
-width: 100%;
-
-max-width: 800px; 
-
-margin: 0 auto;
+  .main-content {
+    
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
     
   }
   
   .article_content {
     background: #ececec;
-    padding: 5px; 
+    padding: 10px; 
     border: 5px;
     margin: 10px;
   }
 
   .article_image {
-    width: 50%;;
+    width: 100%;;
     height: 300px;
     max-width: 800px;
-    border: solid black;
+    
   }
 
   img {
@@ -52,21 +63,18 @@ margin: 0 auto;
     object-fit: cover;
   }
  
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+  .info_wrapper {
+    display: flex;
+    justify-content: flex-start;
+   
   }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 90%;
-    padding: 5px;
-    
+
+  .info_item {
+    margin: 5px;
   }
+
+
+  
   
   /* Footer */
   .footer {
