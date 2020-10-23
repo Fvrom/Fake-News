@@ -37,7 +37,7 @@ $articles =  [
         Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. 
         Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.",
         'author' => $authors[3]['name'],
-        'published_date' => '2020-02-09',  // Kanske lägga datum i en ny array?
+        'published_date' => '2020-02-12',  // Kanske lägga datum i en ny array?
         'likes' => '10',
         'image' => '/img/image2.jpg'
     ],

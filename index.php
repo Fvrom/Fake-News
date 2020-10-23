@@ -21,14 +21,19 @@ require __DIR__ . '/data.php'; ?>
 
 <body>
     <header class="header">
-        <h2>Fake News</h2>
+        <h2>Fake Prophet</h2>
     </header>
 
     <section>
         <div class="wrapper">
             <div clasS="sidebar">
                 <div class="ads">
-                    <?php getRandomAd($commercial) ?>
+                
+                    <?php $ad = getRandomAd($commercial); ?> 
+                    <h3> 
+                    <?php echo $ad['title']; ?> </h3> 
+                   <p> <?php echo $ad['content']; 
+                    ?> </p> 
 
 
                 </div>
@@ -38,7 +43,40 @@ require __DIR__ . '/data.php'; ?>
 
 
 
-                <?php echo getArticle($articles); ?>
+                <?php  $articles = sortPostByPublish($articles); // sorting your articles with the function
+    foreach ($articles as $article) : ?>
+        <article class="article_content">
+            <h2>
+                <?= $article['title']; ?>
+            </h2>
+            <p>
+                <?= $article['content']; ?>
+            </p>
+            <div class="article_image"> <img src=" <?= $article['image'] ?>  " alt="image for article"> </div>
+
+            <div class="info_wrapper">
+                <p class="info_item">
+                    Written by:
+                    <?= $article['author']; ?>
+                </p>
+
+                <p class="info_item">
+                    Published:
+                    <?= $article['published_date']; ?>
+                </p>
+
+                <button class="info_item">
+                    Likes:
+                    <?= $article['likes']; ?>
+                    </p>
+            </div>
+
+
+        </article>
+
+
+<?php
+    endforeach; ?> 
 
 
             </div>
