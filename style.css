@@ -1,59 +1,100 @@
+* {
+  box-sizing: border-box;
+ 
+  
+}
+body {
+  margin: 0;
+  
+}
+
+
+/* Colors */ 
+
+:root {
+  --color-header-background: #DDDDDD; 
+  --color-mobile-header: #FFFFFF; 
+  --color-body-background: #E5E5E5; 
+  --color-article-backgorund: #ececec; 
 
   
-  /* Header/Blog Title */
-  .header {
-    padding: 10px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-  }
-
-  .wrapper {
-    display: flex; 
-  }
-
-  @media screen and (min-width: 768px) {
-  .sidebar {
-    
-    background: white;
-    flex: wrap;
-    width: 100%;
-    margin: 10px 0; 
-    padding: 10px;
-    width: 20%;
-    height: 500px;
-    position: relative;
-  }
-  .ads {
-    padding: 10px;
-  }
 }
   
-  .archive.sidebar {
-    background: tomato;
-    width: 20%; 
-    flex: 1;
+  /* Header/Blog Title */
+  header {
+    display: flex;
+    background: var(--color-header-background);
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 40px;
+    margin-bottom: 10px;
+
+  }
+  
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 0;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    pointer-events: none;
   }
 
+  h1 {
+    font-family: Rye;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+ 
   .main-content {
-    
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px; 
     margin: 0 auto;
+    height: 100px;
     
   }
   
   .article_content {
-    background: #ececec;
+    background: var(--color-article-backgorund);
     padding: 10px; 
     border: 5px;
-    margin: 10px;
+    margin: 0 0 10px;
+    
+    
   }
+
+  .title_content {
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+  
+
+  @media screen and (max-width: 800px) {
+
+    .article_text {
+      display: none; 
+    }
+
+    .info_wrapper {
+      display: none;
+
+    }
+    .info_item {
+      display: none;
+    }
+  
+  }
+  
 
   .article_image {
     width: 100%;;
-    height: 300px;
+    height: 150px;
     max-width: 800px;
     
   }
@@ -66,25 +107,35 @@
  
   .info_wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    margin: 5px;
    
   }
 
-  .info_item {
-    margin: 5px;
+  .likes {
+    align-self: center;
+    height: 35px;
   }
 
 
   
   
   /* Footer */
-  .footer {
-    padding: 20px;
+  footer {
+    display: flex; 
+    flex-direction: column;
     text-align: center;
     background: #ddd;
-    margin-top: 20px;
+    
+    
   }
   
+/* hidden things in mobile version */ 
+
+
+
+
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   /* @media screen and (min-width: 800px) {
    .wrapper {
@@ -102,3 +153,20 @@
      }
    }
    */ 
+
+   
+  /* 
+  @media screen and (min-width: 768px) {
+  .sidebar {
+    
+    background: white;
+    flex: wrap;
+    width: 100%;
+    margin: 10px 0; 
+    padding: 10px;
+    width: 20%;
+    height: 500px;
+    position: relative;
+  }
+}
+ */ 
