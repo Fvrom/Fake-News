@@ -29,7 +29,11 @@ function getRandomAd($commercial)
 }
 
 
+function GetArticleById(array $articles, string $id): array {
 
-
-
-?>
+    foreach ($articles as $article ) {
+        if ($article['id'] === $id) {
+            return $article; 
+        }
+    }
+}

@@ -4,8 +4,7 @@
   
   body {
     font-family: 'Prompt', sans-serif;
-      padding: 20px;
-      background: #bbbaba;
-      display: flex;
-      flex-direction: column;
+      padding: 5px;
+      background: #dddcdc;
+     
     }

@@ -1,36 +1,32 @@
-* {
-  box-sizing: border-box;
- 
-  
-}
-body {
-  margin: 0;
-  
-}
 
 
 /* Colors */ 
 
 :root {
-  --color-header-background: #DDDDDD; 
+  --color-header-background: #cecccc; 
   --color-mobile-header: #FFFFFF; 
   --color-body-background: #E5E5E5; 
   --color-article-backgorund: #ececec; 
 
   
 }
+
+
   
-  /* Header/Blog Title */
+  /* --- Header Styling --- */
   header {
     display: flex;
     background: var(--color-header-background);
     justify-content: center;
     align-items: center;
     width: 100%; 
-    height: 40px;
+    height: 70px;
     margin-bottom: 10px;
+    border-radius: 10px;
 
   }
+
+
   
   .hamburger {
     width: 50px;
@@ -45,12 +41,75 @@ body {
 
   h1 {
     font-family: Rye;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
   }
 
+  header nav ul {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+header nav ul li {
+  
+    list-style: none; 
+    padding: 0 40px;
+    
+
+}
+
+
+header nav ul li a {
+  font-family: Rye;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none; 
+    color: #111;
+    
+}
+header nav ul li a:hover {
+box-shadow: 2px 2px 5px grey ; 
+}
+
+/* nav menu is hidden when screen is less than 800 px */ 
+  @media screen and (max-width: 800px) {
+      
+    nav { display: none; }
+  }
+
+  /* hamburger menu disappears when screen gets to 800px */ 
+  @media screen and (min-width: 800px) {
+    .hamburger {
+      display: none;
+    }
+
+    header {
+      height: 100px;
+     
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+
+    header h1 {
+      font-size: 26px;
+    }
+  }
+
+
+  /* --- end of header styling  --- */ 
  
+
+  /* --- Main content styling --- */ 
+
+
   .main-content {
     flex-wrap: wrap;
     width: 100%;
@@ -60,11 +119,14 @@ body {
     
   }
   
-  .article_content {
+  
+
+  .article_wrapper {
     background: var(--color-article-backgorund);
     padding: 10px; 
     border: 5px;
     margin: 0 0 10px;
+    border-radius: 10px;
     
     
   }
@@ -73,9 +135,13 @@ body {
     font-size: 20px;
     margin: 0 0 5px;
   }
-  
+ 
+  .article_subtext {
+    font-size: 1.2rem;
+  }
 
-  @media screen and (max-width: 800px) {
+/* content, author, post date stays hidden when mobile version */ 
+  @media screen and (max-width: 500px) {
 
     .article_text {
       display: none; 
@@ -95,7 +161,7 @@ body {
   .article_image {
     width: 100%;;
     height: 150px;
-    max-width: 800px;
+    /* max-width: 900px; */ 
     
   }
 
@@ -104,33 +170,83 @@ body {
     height: 100%;
     object-fit: cover;
   }
+   
+  /* Link for read more */ 
+  .read_more {
+    margin: 0 0 0 5px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    height: 25px;
+    }
+  
+    .read_more:hover {
+      background: #b7b7b8;
+    }
+  
+
+    /* Info : Author and Publish */ 
  
   .info_wrapper {
+    
     display: flex;
-    justify-content: flex-end;
-    margin: 5px;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 80%;
+    height: 45px;
+   
    
   }
 
+  .info_item {
+    margin: 25px;
+    padding: 5px;
+    background: #f1f1f1;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    .info_wrapper {
+      display: none;
+    }
+  }
+
+  /* Like button styling */ 
+  .like_wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .likes {
+    background: #E5E5E5;
     align-self: center;
     height: 35px;
+    border: solid 1px #717c96;
+    border-radius: 10%; 
+  }
+
+  .likes:hover {
+    background: #6e87bd;
+    box-shadow: 2px 2px 3px #717c96;
   }
 
 
   
+
+  /* --- End of main content styling --- */ 
   
   /* Footer */
   footer {
     display: flex; 
     flex-direction: column;
     text-align: center;
-    background: #ddd;
+    
     
     
   }
   
-/* hidden things in mobile version */ 
+
 
 
 
