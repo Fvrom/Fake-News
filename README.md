@@ -1,7 +1,7 @@
 # Fake-News
 First school assignment in php! Creating a fake news website. 
 
-<img src="https://giphy.com/gifs/AnimationOnFOX-the-simpsons-screenless-JUXS6l5rcBWWszBPw7" width="50%">
+<img src="https://media.giphy.com/media/JUXS6l5rcBWWszBPw7/giphy.gif" width="50%">
 
 ### Built with
 - PHP
