@@ -7,8 +7,11 @@ require __DIR__ . '/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="header.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
@@ -22,7 +25,7 @@ require __DIR__ . '/data.php'; ?>
 
 <body>
     <header>
-        <h1> Fake Prophet </h1>
+        <h1 class="header_title"> Fake Prophet </h1>
 
         <button class="hamburger">
             <!-- burger menu taken from elinas lesson  -->

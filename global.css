@@ -8,3 +8,19 @@
       background: #dddcdc;
      
     }
+
+    
+
+/* Colors */ 
+
+:root {
+  --color-header-background: #cecccc; 
+  --color-mobile-header: #FFFFFF; 
+  --color-body-background: #E5E5E5; 
+  --color-article-backgorund: #ececec; 
+
+  
+}
+
+
+  

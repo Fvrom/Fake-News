@@ -177,24 +177,18 @@ $ads = [
 
 $commercial =  [
     [
-        'title' => 'Potion to the max!',
-        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
-        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
-        Snitch Fluffy rock-cake',
+        'title' => 'The wand for you!',
+        'content' => 'Oliverwands got the wand for you.',
         'ad' => $ads[0]['name'],
     ],
     [
         'title' => 'Wizard for Dummmies',
-        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
-        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
-        Snitch Fluffy rock-cake',
+        'content' => 'Find yourself useless? Dont worry! Sign up for our workshop ',
         'ad' => $ads[1]['name'],
     ],
     [
         'title' => 'Get better at Potions today!',
-        'content' => 'Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. 
-        Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. 
-        Snitch Fluffy rock-cake',
+        'content' => 'Get down to P-Potions at Diagon Alley today! Get 20% off books.',
         'ad' => $ads[2]['name'],
     ]
 ];

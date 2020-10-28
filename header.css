@@ -1,0 +1,103 @@
+
+  /* --- Header Styling --- */
+  header {
+    display: flex;
+    background: var(--color-header-background);
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+  }
+
+
+  
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 0;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  .header_title {
+    font-family: Rye;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 270px) {
+    header .header_title {
+      font-size: 18px;
+    }
+  }
+
+  header nav ul {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+header nav ul li {
+  
+    list-style: none; 
+    padding: 0 40px;
+    
+
+}
+
+
+header nav ul li a {
+  font-family: Rye;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none; 
+    color: #111;
+    
+}
+header nav ul li a:hover {
+box-shadow: 2px 2px 5px grey ; 
+}
+
+/* nav menu is hidden when screen is less than 800 px */ 
+  @media screen and (max-width: 800px) {
+      
+    nav { display: none; }
+  }
+
+  /* hamburger menu disappears when screen gets to 800px */ 
+  @media screen and (min-width: 800px) {
+    .hamburger {
+      display: none;
+    }
+
+    header {
+      height: 100px;
+     
+    }
+    .header_title {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+
+    .header_title {
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+  header nav ul li a {
+      font-size: 1rem; 
+  }
+
+  }

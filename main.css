@@ -39,11 +39,17 @@
     pointer-events: none;
   }
 
-  h1 {
+  .header_title {
     font-family: Rye;
     font-size: 26px;
     text-align: center;
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 270px) {
+    header .header_title {
+      font-size: 18px;
+    }
   }
 
   header nav ul {
@@ -91,14 +97,14 @@ box-shadow: 2px 2px 5px grey ;
       height: 100px;
      
     }
-    h1 {
+    .header_title {
       font-size: 36px;
     }
   }
 
   @media screen and (max-width: 990px) {
 
-    header h1 {
+    .header_title {
       font-size: 26px;
     }
   }
@@ -127,7 +133,7 @@ box-shadow: 2px 2px 5px grey ;
     border: 5px;
     margin: 0 0 10px;
     border-radius: 10px;
-    
+    box-shadow: 5px 5px 5px rgba(125, 126, 125, 0.2);
     
   }
 
@@ -177,12 +183,16 @@ box-shadow: 2px 2px 5px grey ;
     border: 1px solid #c9c9c9;
     border-radius: 5px;
     height: 25px;
+    
     }
   
     .read_more:hover {
       background: #b7b7b8;
     }
   
+    .read {
+      text-decoration: none; 
+    }
 
     /* Info : Author and Publish */ 
  
