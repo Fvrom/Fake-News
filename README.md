@@ -23,9 +23,11 @@ php -S localhost:8000
 4. open up localhost:8000/index.php in your browser
 
 
-## Tester
+## Testers
 
-Tester:
+Tester 1:
+<br>
+Tester 2:
 
 ## Comments 
 
