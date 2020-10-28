@@ -14,7 +14,7 @@ First school assignment in php! Creating a fake news website.
 
 2. Go to the repository folder in your terminal. 
 
-3. Start a local server in the command linde 
+3. Start a local server in the command line 
 
 ```
 php -S localhost:8000
