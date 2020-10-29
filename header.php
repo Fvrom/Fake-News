@@ -19,7 +19,6 @@ require __DIR__ . '/data.php'; ?>
 
 
 
-
     <title>Fake News </title>
 </head>
 
@@ -28,20 +27,24 @@ require __DIR__ . '/data.php'; ?>
         <h1 class="header_title"> Fake Prophet </h1>
 
         <button class="hamburger">
-            <!-- burger menu taken from elinas lesson  -->
-            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-                <g clip-path="url(#clip0)" fill="#fff">
-                    <path d="M20 40a20 20 0 1120-20 20.022 20.022 0 01-20 20zm0-38.75A18.75 18.75 0 1038.75 20 18.772 18.772 0 0020 1.25z" />
+            <!-- burger menu taken from elinas lesson, changed color and position  -->
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="10 0 30 40">
+                <g clip-path="url(#clip0)" fill="#222222">
+
                     <path d="M29.688 13.75H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25zM29.688 20.625H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25zM29.688 27.5H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25z" />
                 </g>
                 <defs>
                     <clipPath id="clip0">
-                        <path fill="#fff" d="M0 0h40v40H0z" />
+                        <path fill="#222222" d="M0 0h40v40H0z" />
                     </clipPath>
                 </defs>
             </svg>
         </button>
+
+        </a>
         <nav>
+
+
             <ul>
 
                 <li> <a href="index.php">News</a></li>
@@ -54,6 +57,9 @@ require __DIR__ . '/data.php'; ?>
 
 
             </ul>
+
         </nav>
+
+
 
     </header>

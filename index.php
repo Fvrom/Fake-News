@@ -1,8 +1,8 @@
 <?php require __DIR__ . '/header.php'; ?>
 
 
-<main>
-    <section>
+<main class="container">
+    <section id="main">
 
         <!-- wrapping everything in main so sidebar and content work in flex -->
         <div class="wrapping_articles_sidebar">
@@ -88,16 +88,18 @@
 
 
         </div>
+
+
     </section>
 
+    <footer class="footer">
+        hello
+    </footer>
 </main>
 
 
 
 
-<footer class="footer">
-
-</footer>
 
 </body>
 
