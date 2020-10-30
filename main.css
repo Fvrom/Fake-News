@@ -1,125 +1,15 @@
 
-
-/* Colors */ 
-
-:root {
-  --color-header-background: #cecccc; 
-  --color-mobile-header: #FFFFFF; 
-  --color-body-background: #E5E5E5; 
-  --color-article-backgorund: #ececec; 
-
-  
-}
-
-
-  
-  /* --- Header Styling --- */
-  header {
-    display: flex;
-    background: var(--color-header-background);
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    height: 70px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-
-  }
-
-
-  
-  .hamburger {
-    width: 50px;
-    height: 50px;
-    background: none;
-    border: 0;
-    position: absolute;
-    right: 0;
-    z-index: 4;
-    pointer-events: none;
-  }
-
-  .header_title {
-    font-family: Rye;
-    font-size: 26px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 270px) {
-    header .header_title {
-      font-size: 18px;
-    }
-  }
-
-  header nav ul {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-  
-   
-}
-
-header nav ul li {
-  
-    list-style: none; 
-    padding: 0 40px;
-    
-
-}
-
-
-header nav ul li a {
-  font-family: Rye;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration: none; 
-    color: #111;
-    
-}
-header nav ul li a:hover {
-box-shadow: 2px 2px 5px grey ; 
-}
-
-/* nav menu is hidden when screen is less than 800 px */ 
-  @media screen and (max-width: 800px) {
-      
-    nav { display: none; }
-  }
-
-  /* hamburger menu disappears when screen gets to 800px */ 
-  @media screen and (min-width: 800px) {
-    .hamburger {
-      display: none;
-    }
-
-    header {
-      height: 100px;
-     
-    }
-    .header_title {
-      font-size: 36px;
-    }
-  }
-
-  @media screen and (max-width: 990px) {
-
-    .header_title {
-      font-size: 26px;
-    }
-  }
-
-
-  /* --- end of header styling  --- */ 
  
 
   /* --- Main content styling --- */ 
 
 
   .main-content {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px; 
+    max-width: 1200px; 
     margin: 0 auto;
     height: 100px;
     
@@ -190,8 +80,9 @@ box-shadow: 2px 2px 5px grey ;
       background: #b7b7b8;
     }
   
-    .read {
+    .read_more_anchor {
       text-decoration: none; 
+      color: black;
     }
 
     /* Info : Author and Publish */ 
@@ -246,67 +137,3 @@ box-shadow: 2px 2px 5px grey ;
 
   /* --- End of main content styling --- */ 
   
-  /* Footer */
-
-    
- /* Doesnt work to keep my footer  at the bottom 
-  html, body {
-    height: 100%; 
-  }
-
-  .container {
-    min-height: 100%; 
-  }
-  .main {
-    
-    overflow: auto;
-    padding-bottom: 100px; 
-
-  }
-
-.footer {
-  
-  height: 100px;
-  position: relative; 
-  margin-top: -100px; 
-  background-color: #717c96;
-  clear: both; 
-
-}
-
-
-
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  /* @media screen and (min-width: 800px) {
-   .wrapper {
-     
-     flex: wrap;
-      width: 100%;
-      padding: 0;
-    }
-  }
-  @media screen and (min-width: 800px) {
-    .article_content {
-      width: calc(50% - 20px);
-       
-       padding: 0;
-     }
-   }
-   */ 
-
-   
-  /* 
-  @media screen and (min-width: 768px) {
-  .sidebar {
-    
-    background: white;
-    flex: wrap;
-    width: 100%;
-    margin: 10px 0; 
-    padding: 10px;
-    width: 20%;
-    height: 500px;
-    position: relative;
-  }
-}
- */ 

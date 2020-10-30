@@ -1,9 +1,10 @@
 <?php require __DIR__ . '/header.php'; ?>
+<?php require __DIR__ . '/footer.php'; ?>
 
 
-<main class="container">
-    <section id="main">
 
+<section id="container">
+    <div id="main">
         <!-- wrapping everything in main so sidebar and content work in flex -->
         <div class="wrapping_articles_sidebar">
             <div class="sidebar">
@@ -45,7 +46,7 @@
                             <p> <?= $article['subtext']; ?> </p>
                         </div>
 
-                        <a class="read" href="/article.php?id=<?= $id ?>"> <button class="read_more"> Read more...</a> </button>
+                        <a href="/article.php?id=<?= $id ?>" class="read_more_anchor"> <button class="read_more"> Read more...</a> </button>
 
 
                         <!-- <div class="article_text">
@@ -88,14 +89,10 @@
 
 
         </div>
+    </div>
 
+</section>
 
-    </section>
-
-    <footer class="footer">
-        hello
-    </footer>
-</main>
 
 
 

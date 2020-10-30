@@ -1,0 +1,65 @@
+/* Contact form styling */ 
+
+.input_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input_text {
+    width: 50%; 
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.input_button {
+    font-size: 1.5rem;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 1.3rem;
+    font-family: Rye;
+}
+
+.input_name {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+
+
+.submitted_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+   
+    
+    
+}
+
+.thank_container{
+    height: 200px;
+    margin-top: 40px;
+    
+}
+
+.home_container {
+    
+    height: 100px;
+    
+}
+.contact_home {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-top: 30px;
+   
+}

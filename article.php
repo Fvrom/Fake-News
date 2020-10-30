@@ -2,6 +2,7 @@
 
 
 require __DIR__ . '/header.php';
+require __DIR__ . '/footer.php';
 
 $articles = sortPostByPublish($articles); // sorting your articles with the function
 ?>

@@ -13,7 +13,7 @@
   }
 
 
-  
+  /*
   .hamburger {
     width: 50px;
     height: 50px;
@@ -25,7 +25,7 @@
     pointer-events: none;
   }
 
-
+*/ 
   .header_title {
     font-family: Rye;
     font-size: 26px;
@@ -68,11 +68,12 @@ header nav ul li a:hover {
 box-shadow: 2px 2px 5px grey ; 
 }
 
-/* nav menu is hidden when screen is less than 800 px */ 
+/* nav menu is hidden when screen is less than 800 px  */
   @media screen and (max-width: 800px) {
       
     nav { display: none; }
   }
+  
 
   /* hamburger menu disappears when screen gets to 800px */ 
   @media screen and (min-width: 800px) {
@@ -96,11 +97,5 @@ box-shadow: 2px 2px 5px grey ;
     }
   }
 
-  @media screen and (max-width: 1000px) {
-  header nav ul li a {
-      font-size: 1rem; 
-  }
-
-  }
-
+  
  
