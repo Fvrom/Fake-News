@@ -29,6 +29,9 @@ Tester 1: Mark
 <br>
 Tester 2: Carolina
 
+Known problem that tester Carolina pointed out: Footer covers last article. Trying to solve problem.
+
+
 ## Comments 
 
 Comment 1: Storleken på bilderna gör sidan lite seg att ladda när man scrollar, du kan komprimera dom på till exempel imagecompressor.com
