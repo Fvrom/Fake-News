@@ -73,7 +73,7 @@ $article = getArticleById($articles, $id); ?>
                 <div class="like_wrapper">
                     <button class="likes">
                         Likes
-                        <?= $article['likes']; ?>
+                        <?= $article['likes']; ?> </button>
 
                 </div>
 
@@ -87,7 +87,5 @@ $article = getArticleById($articles, $id); ?>
 
 
 
-
-</section>
 
 </section>

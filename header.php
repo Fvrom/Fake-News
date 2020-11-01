@@ -38,7 +38,7 @@ require __DIR__ . '/data.php'; ?>
 
                 <li> <a href="index.php">News</a></li>
 
-                <li> <a href="contact.php">Contact us</a></li>
+                <li> <a href="contact.php">Contact</a></li>
 
 
             </ul>
