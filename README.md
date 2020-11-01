@@ -36,7 +36,7 @@ Comment 1: Storleken på bilderna gör sidan lite seg att ladda när man scrolla
 Comment 2: Jag tycker footern har lite för mycket height än nödvändigt, den är snygg men tar bort lite fokus från själva innehållet på sidan
 <br>
 Comment 3: Vissa saknade taggar eller dubbla taggar, till exempel två stycken 
-</section> men ingen </button> I article.php. 
+< / section > men ingen < / button > I article.php. 
 <br>
 Comment 4: petitess: syntax i css skrivs oftast som tex ‘.home-container’ istället för understreck.
 <br>
