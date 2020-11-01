@@ -45,7 +45,10 @@ Comment 4: petitess: syntax i css skrivs oftast som tex ‘.home-container’ is
 <br>
 Comment 5: Snygg sida och bra jobbat, responsiv och lätt att läsa och förstå koden!
 
-
+## fixed
+- Changed my footer height after comment. 
 
 ## License
 This project is licensed under the MIT License.
+
+
