@@ -45,8 +45,9 @@ Comment 4: petitess: syntax i css skrivs oftast som tex ‘.home-container’ is
 <br>
 Comment 5: Snygg sida och bra jobbat, responsiv och lätt att läsa och förstå koden!
 
-## fixed
-- Changed my footer height after comment. 
+## fixed after comments
+- Changed my footer height. 
+- Found unclosed button tag and double section in article.php.
 
 ## License
 This project is licensed under the MIT License.
