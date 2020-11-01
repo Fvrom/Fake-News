@@ -29,7 +29,6 @@ Tester 1: Mark
 <br>
 Tester 2: Carolina
 
-Known problem that tester Carolina pointed out: Footer covers last article. Trying to solve problem.
 
 
 ## Comments 
@@ -48,6 +47,7 @@ Comment 5: Snygg sida och bra jobbat, responsiv och lätt att läsa och förstå
 ## fixed after comments
 - Changed my footer height. 
 - Found unclosed button tag and double section in article.php.
+- Fixed footer that was in the way of last article. 
 
 ## License
 This project is licensed under the MIT License.
